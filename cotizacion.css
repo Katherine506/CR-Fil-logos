@@ -1,0 +1,159 @@
+/*cotizacion*/
+.cotizacion-titulo {
+    text-align: center;
+    margin: 3%;
+    padding: 3%;
+    font-family: 'Oswald', sans-serif;    
+    font-size: 22px;
+    color: #fff;  
+    text-shadow: 4px 4px 8px #111;
+    line-height: 45px; 
+}
+.foto {
+    width: 100%;
+    background-image:  url('logo/servi.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /*que cubra bien al contenedor*/
+    display: table;
+}
+.cotice {
+    margin: 8%;
+    font-family: 'Roboto Condensed', sans-serif;    
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 30px;
+    color:black;
+    text-align: justify;
+}
+.item {
+    margin: 8%;
+}
+.formulario1 {
+    font-family: 'Roboto Condensed', sans-serif;    
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 40px;
+    color:black;
+    margin: 0, auto;
+}
+.formulario2{
+    font-family: 'Roboto Condensed', sans-serif;    
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 40px;
+    color:black;
+    margin: 0, auto;
+}
+
+.formulario3{
+    font-family: 'Roboto Condensed', sans-serif;    
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 40px;
+    color:black;
+    margin: 0, auto;
+}
+
+.btn-default {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #00c0f3;
+    border-radius: 6px;
+    border: 2px solid #00c0f3;
+  }
+
+.btn-default:hover{
+    color: #00c0f3;
+    background-color: #ffffff;
+}
+
+
+.btn-default {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #00c0f3;
+    border-radius: 6px;
+    border: 2px solid #00c0f3;
+}
+
+  .btn-default:hover{
+    color: #3f8ed8;
+    background-color: #ffffff;
+}
+
+@media only screen and (min-width: 1000px) {
+    .cotizacion-titulo { 
+        margin: 8%;
+    }
+    .foto {
+        background-image: linear-gradient(
+            rgba(197, 117, 117, 0.1),
+            rgba(243,112,33,0.2),
+            rgba(209, 102, 212, 0.2),
+            rgba(0,0,0,0.1)),
+            url('logo/cot.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; /*que cubra bien al contenedor*/
+        display: table;
+    }
+    .caja-cotice{
+        padding-top: 10%;
+    }
+
+    .cotice {
+        margin: 0px;
+        padding-top: 0px;
+        font-family: 'Roboto Condensed', sans-serif;    
+        font-size: 26px;
+        font-weight: 100;
+        line-height: 30px;
+        color:black;
+        text-align: justify;
+        line-height: 40px;
+    }
+    .fomas {
+        margin: 50% 50%;
+        
+    }
+    .formulario1 {
+        font-family: 'Roboto Condensed', sans-serif;    
+        font-size: 26px;
+        font-weight: 200;
+        line-height: 30px;
+        color:black; 
+    }
+    
+    .formulario2 {
+        padding-top: 3%;
+        font-family: 'Roboto Condensed', sans-serif;    
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 40px;
+        color:black;
+        margin: 0, auto;
+    }
+
+    .formulario3 {
+        padding-top: 3%;
+        font-family: 'Roboto Condensed', sans-serif;    
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 40px;
+        color:black;
+        margin: 0, auto;
+    }
+    .btn-default {
+       align-content: center;
+    }
+}
+

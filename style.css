@@ -1,0 +1,457 @@
+input, select {
+vertical-align: middle;
+}
+body {
+    background-color: #fff;
+    margin: 0%;
+}
+
+* {
+    text-decoration:  none;
+}
+
+.main {
+    padding-top: 100px; /*vuelve a acomodar lo que desacomode cuando puse el nav que se manteniera*/
+    margin: 0px; 
+}
+
+.body {
+    margin: 0px;
+    /*background-color: #f3f3f3;*/
+}
+
+.header {
+    position: fixed; /*para que el nav se mantenga al scrollear*/
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+.header-logo {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;/*al centro*/
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none; 
+    padding:  0 8px;
+}
+
+header nav ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    color: #111;  
+    text-transform: uppercase;   
+}
+
+.into.seccion {
+    padding: 10px;
+}
+
+.jumbotron {
+    margin: 0px;
+    background-color: #fff;
+    width: 100%;
+    height: 110px;
+
+}
+
+@media only screen and (min-width: 1000px) {/*para desktop*/
+      .header::after{ /*esto para que mmas adelante no se desaparezca la barra*/
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .header-logo {
+        margin: 30px 0;
+        text-align: left;
+        line-height: 40px ;/*para bajar un poco el margen del logo*/
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left; /*para poner la linea a la izquierda que divide el logo den navbar*/
+    }
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+        position: relative; /*para el efecto de animacion al seleccionar*/
+        
+    }   
+    header nav ul li a { 
+        line-height: 60px;   
+        font-size: 20px;
+        position: relative; /*para el efecto de animacion al seleccionar*/
+    }
+    header nav ul li a::hover{
+        color: #000;
+    }
+    .lista-menu a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background-color: #00c0f3;
+        position: absolute;
+        bottom: 0;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+    .lista-menu a:hover::before{
+        width: 100%;
+    }
+    header nav ul li a::before{
+        width: 100%;
+    }    
+}
+
+/*INDEX*/
+
+.index-banner {
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(197, 117, 117, 0.1),
+        rgba(243,112,33,0.2),
+        rgba(209, 102, 212, 0.2),
+        rgba(0,0,0,0.1)),
+        
+        url('logo/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /*que cubra bien al contenedor*/
+    display: table;  
+}
+
+.verticel-centro{ /*vamos a poner el texto al centro*/
+    display:table-cell;
+    vertical-align: middle;
+}/*la hacemos en una tablas*/
+
+.parrafo-h2 { /*titulo*/
+    margin: 0px;
+    padding-bottom: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 900;    
+    color: #fff; 
+    text-align: center;
+    text-shadow: 2px 2px 8px #111; 
+}    
+.parrafo-h1 {
+    margin: 5%;
+    font-family: 'Roboto Condensed', sans-serif;    
+    font-size: 24px;
+    font-weight: 300;
+    font-style: bold;
+    line-height: 40px;
+    color: #fff;
+    text-align: justify;
+    text-shadow: 2px 2px 8px #111;
+}  
+/*ojo*/
+.intro-seccion {
+    margin-top: 0%;
+    padding-top: 0%;
+    background-color: #fff; 
+    display: inline-block;
+}  
+
+.intro-2 {
+    margin: 10%;
+    /*padding: 0px;*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 600;     
+    color: black; 
+    text-align: center; 
+}  
+
+.intro-1 {
+    margin: 3%;
+    font-family: 'Roboto Condensed', sans-serif;    
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 40px;
+    color: black;
+    text-align: justify;
+} 
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+    margin: 0px;
+    padding: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 27px;
+    font-weight: 100;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+} 
+.index:hover {
+    background-color: rgba(145, 150, 228, 0.801);  
+}
+ 
+.info {
+    margin: 0px;
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;    
+    font-size: 40px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;    
+}
+
+.info-parrafo {
+    margin: 5%;
+    font-family: 'Roboto condensed', sans-serif;    
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 40px;
+    color: #111;
+    text-align: justify;      
+}
+
+.btn-centrado {
+    padding: 4%;
+    text-align: center
+}  
+
+.btn-solicitar {
+    text-align: center;
+    text-decoration: none;
+    padding: 2%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #00c0f3;
+    border-radius: 6px;
+    border: 2px solid #00c0f3;
+}
+
+.btn-solicitar:hover{
+    color: #00c0f3;
+    background-color: #ffffff;
+}
+
+.index-contacto {
+    display: inline;
+    margin: 0% auto;
+}
+
+.pre-contacto {
+    margin: 4%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+}
+
+.pre-info{
+    display: inline;
+    margin: 0%;    
+}
+
+.pre-texto {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 900;    
+    color: #000; 
+    text-align: center;
+}
+
+.pre-texto-1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+    font-weight: 100;    
+    color: #000; 
+    text-align: center;
+}
+
+.contacto-img {
+    display:table;
+    overflow:hidden;
+    margin:0px auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .index-banner {
+        height: 500px;      
+    }  
+    .parrafo-h1 {
+       margin-top: 0% auto;
+       text-align: center;
+    } 
+    .parrafo-h2 {
+        padding-top: 0%;
+        margin-top: 7%;
+    /*meter boton para cotizar*/ 
+    }
+    .intro-1 {
+        margin: 3%;
+        display: block;
+     } 
+     .intro-2 {
+         margin: 30px auto;
+         padding: 40px;
+    }  
+    .index-links {
+        padding-bottom: 20px;
+        overflow: hidden;
+        line-height: 40px;
+    }
+    .index-links div {
+        margin: 20px 10px 0;
+        height: 230px;
+        background-color: #f2f2f2;
+        float: left;
+    }
+    .index-boxlink-square {
+        width: calc(25% - 20px) !important;
+       display: flex;
+        align-items: center;
+        justify-content: center;        
+    } 
+    .index-boxlink-square:hover {  
+        background-color:  rgba(255,3,3,0.3);
+    }
+    .index-boxlink-rectangle {
+        width: calc(50% - 20px) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    } 
+    .index-boxlink-rectangle:hover {
+        background-color: rgba(145, 150, 228, 0.801);  
+    }
+    .index-links div h3 {
+        margin: 0px;
+        /*line-height: 100px; /*poner para alinear al centro*/
+    }   
+    .info {
+        padding-top: 6%;
+    }
+    .info-parrafo {
+        text-align: center;
+    }
+
+    .btn-centrado {
+        padding-bottom: 5%;
+    }
+    .pre-info {
+        width: 24.7%;
+        display:inline-block;
+        overflow:hidden;
+        margin: 0% auto;
+        display: inline-block;        
+    }
+    .contacto-contenedor {
+        margin: 0%;
+    }
+    .pre-info:hover {  
+        background-color:  rgba(94, 187, 86, 0.411);
+    }
+ 
+}
+
+/*footer*/
+.site-footer{
+    background-color: #00c0f3;
+    font-size: 19px;
+}
+.site-footer .social-icons
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+
+}
+
+.ddrr {   
+    color:#fff;
+    display: block;  
+}
+.-a:hover{
+    color: red;
+}
+.copyright-text
+{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+.Contenedor {
+    margin: 0;
+}
+.pie1 {
+    float: left;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.pie2 {
+    float: right;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .site-footer{
+    padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons{
+        text-align:center
+    }
+    .social-icons{
+        padding-left:0;
+        margin-bottom:0;
+        list-style:none
+    }
+    .social-icons li
+    {
+        display:inline-block;
+        margin-bottom:4px;
+    }
+
+    .social-icons.size-sm a
+    {
+        line-height:34px;
+        height:34px;
+        width:34px;
+        font-size:14px
+    }
+    .ddrr {
+        padding: 1.1%;
+    }
+    .rrss {
+        padding-bottom: 1%;
+    }
+}
+
+
+
+
+

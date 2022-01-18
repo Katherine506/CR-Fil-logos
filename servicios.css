@@ -1,0 +1,177 @@
+/*Servicios*/
+
+
+.Titulo-servicios {
+    font-family: 'oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 4px 4px 8px #111;
+}
+
+.Titulo-servicios-h1 {
+   
+    padding-top: 0px;
+    font-family: 'Roboto Condensed', sans-serif;    
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    text-shadow: 4px 4px 16px #111;
+
+}
+
+ .Servicios-container {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    display: inline;    
+}
+
+.item {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    display: block;
+   /* background-color: rgba(255,3,3,0.3);*/
+}
+
+.item-especifico {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
+    text-align: center;
+    font-size: 28px;
+    
+}
+
+.texto-item {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 8%;
+    font-size: 20px;
+    font-weight: 200;
+    color: #000;
+    text-align: justify;  
+    display: flex-start;
+}
+.btn-solicitar-item {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15%;
+    font-weight: 200;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #3f8ed8;
+    border-radius: 6px;
+    border: 2px solid rgb(63, 142, 216);
+}
+.botn-servicios {
+    padding: 4%;
+    text-align: center
+}
+.btn-solicitar-item:hover {
+    color: #3f8ed8;
+    font-weight: 200;
+    background-color: #fff;
+    border: 2px solid #fff;
+    margin: 50%;
+}
+
+.para-servirle {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: black;
+    display: inline;
+    text-align: center;
+
+}
+
+.logo-servicios {
+    display:table;
+    overflow:hidden;
+    margin: 0px auto;
+    padding: 2%;
+
+}
+.index-banner-servicios {
+    width: 100%;
+    background-image:  url('logo/servi.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /*que cubra bien al contenedor*/
+    display: table;  
+}
+
+@media only screen and (min-width: 1000px) {
+      
+    .Titulo-servicios { /*flexbox*/
+        padding: 2%; 
+    }
+    .Titulo-servicios-h1 {
+        padding-bottom: 4%;
+    }
+    .imagen{
+        padding: 10%;
+    }
+    .index-banner-servicios {
+        background-image: linear-gradient(
+        rgba(197, 117, 117, 0.1),
+        rgba(243,112,33,0.2),
+        rgba(209, 102, 212, 0.2),
+        rgba(0,0,0,0.1)),
+        url('logo/servi.jpg');
+        width: 100%;
+    }
+    
+     .Servicios-container {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        border: 1px solid #000;
+        background-color: rgba(0, 0, 0, 0.04);
+        margin-top: 10%;
+           
+    }
+    
+    
+    
+    .item {
+        flex-basis: 25%;
+        background: none;
+        margin: 23px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px; 
+    }
+    .item:hover {
+        background-color:  rgba(63, 142, 216, 0.3);
+    }
+    
+    .item-especifico {
+       margin: 0%;
+       padding: 2%;
+       font-family: 'Roboto Condensed', sans-serif;
+       font-size: 26px;
+       font-weight: 600;
+    }
+    
+    .texto-item {
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+        font-weight: 200;
+        color: #000;
+        text-align: justify;
+        justify-content: space-between;
+    }
+    
+   
+    .btn-solicitar-item:hover {
+        color: #3f8ed8;
+        font-weight: 200;
+        background-color: #fff;
+        border: 2px solid #fff;
+        margin: 5%;
+    }
+    
+}
